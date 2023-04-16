@@ -1,0 +1,49 @@
+#Rsidebar{
+    position: absolute;
+    left: 1000px;
+    top: 150px;
+}
+#Time{
+    position: absolute;
+    left: 1000px;
+    top: 450px; 
+}
+
+#return{
+    position: absolute;
+    left: 250px;
+}
+
+#addbook, #modifybook{
+    position: absolute;
+    bottom: 100px;
+    left: 180px;
+    z-index: -100;
+}
+
+#addstu, #modstu, #delstu{
+    position: absolute;
+    bottom: 100px;
+    left : 80px;
+    z-index: -100;
+}
+#return, #dues, #search{
+    position: absolute;
+    bottom: 100px;
+    left : 200px;
+    z-index: -100;
+}
+
+#usermain, #adminmain, #mybooks, #udues{
+    position: absolute;
+    z-index: -100;
+    margin-top: 100px;
+    margin-left: 40px;
+    width:65%; /* min-content */
+    height: min-content;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+}

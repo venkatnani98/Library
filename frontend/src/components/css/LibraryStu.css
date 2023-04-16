@@ -1,0 +1,144 @@
+/* ADD  STUDENT */
+
+.addStu, .modStu, .return, .search, .dues{
+    position: absolute;
+    top: 110px;
+    left: 5%;
+    border: 10px solid transparent;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+    width:min-content;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to bottom, rgb(3, 107, 12), rgb(172, 218, 161)) border-box;
+}
+
+.as_input, .submit{
+    text-align: center;
+    padding: 10px;
+    width: 280px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#button{
+    position: relative;
+}
+
+.ass_input{
+    text-align: center;
+    padding: 10px;
+    width: 305px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+*{
+    font-weight: bold;
+}
+
+#pic_div{
+    width: 100px;
+    height: 100px;
+}
+
+.srh_input{
+    text-align: center;
+    padding: 10px;
+    width:500px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#Stuclose{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    padding: 5px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+#rent{
+    position: absolute;
+    top: 200px;
+    
+}
+#rent h3{
+    text-align: justify;
+
+}
+
+#renttitle{
+    position: relative;
+    top: 160px;
+    left: 300px;
+}
+
+.rentele{
+    position: relative;
+    top: 140px;
+    margin-left: 5px;
+}
+
+#rtn_details{
+    position: relative;
+    top: 100px;
+    left: 550px;
+}
+
+.confirmrtn{
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    width: 300px;
+    height: 100px;
+    padding: 20px 40px;
+}
+
+.confirmrtn button{
+    background-image: linear-gradient(to bottom, rgb(3, 107, 12), rgb(172, 218, 161));
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.profilePage{
+    position: absolute;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    top: 100px;
+    width: 950px;
+    height: 600px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .addStu, .modStu, .return, .search, .dues{
+        position: absolute;
+        top: 400px;
+        left: 5%;
+        border: 10px solid transparent;
+        border-radius: 50px;
+        padding: 10px 20px 10px 20px;
+        width:380px;
+        background: linear-gradient(white,  white) padding-box,
+        linear-gradient(to bottom, rgb(3, 107, 12), rgb(172, 218, 161)) border-box;
+    }
+
+    .as_input, .submit{
+        padding: 5px;
+        width: 180px;
+    }
+    .srh_input{
+        padding: 10px;
+        width:350px;
+    }
+
+
+}

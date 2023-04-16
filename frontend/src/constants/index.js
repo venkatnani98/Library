@@ -1,0 +1,9 @@
+export const API_URL = "http://localhost:8000/api/library/";
+export const API_URL_2 = "http://localhost:8000/api/library/";
+export const SRCH_URL = "http://localhost:8000/api/library/search/";
+export const RENT_URL = "http://localhost:8000/api/rental/";
+export const RENT_URL_2 = "http://localhost:8000/api/rental/fetch/";
+export const RETURN_URL = "http://localhost:8000/api/rental/id/";
+export const LOGIN_URL = "http://localhost:8000/api/login/";
+export const REGISTER_URL = "http://localhost:8000/api/register/";
+export const MODIFY_URL = "http://localhost:8000/api/modify/";

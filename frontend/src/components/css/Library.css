@@ -1,0 +1,718 @@
+/* Admin Nav Component CSS */
+
+.nav_main, #rside_profile{
+    transition: 0.6s;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 5px;
+    border: 1px solid black;
+    margin-left: 10px;
+    width: 185px;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, rgb(3, 107, 12), rgb(172, 218, 161));
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    z-index:1000;
+    position: absolute;
+    color: black;
+    z-index: 1;
+
+}
+
+li{
+    transition: 0.6s;
+    padding: 20px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 180px;
+    list-style: none;
+    background-color: white;
+}
+
+.nav_main_sub_container_1{
+    left: 220px;
+    position: absolute;
+    top: 77px;
+    display: none;
+    width: 180px;
+    z-index: 1000;
+}
+.nav_main_sub_container_2{
+    left: 427px;
+    position: absolute;
+    top: 77px;
+    display: none;
+    width: 180px;
+    z-index: 1000;
+}
+
+
+li:hover{
+    background-color: lightgreen;
+}
+
+li.active{
+    color: white;
+}
+
+.nav_main:hover, #rside_profile:hover{
+    background-image: linear-gradient(to bottom,lightgreen,lightgreen);
+}
+
+#book_nav:hover .nav_main_sub_container_1{
+display: block;
+}
+#user_nav:hover .nav_main_sub_container_2{
+    display: block;
+    }
+
+/* Add BOOK CSS */
+
+.addbook, .modify{
+    position: absolute;
+    top: 110px;
+    left: 15%;
+    border: 10px solid transparent;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+    width: fit-content;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to bottom, rgb(3, 107, 12), rgb(172, 218, 161)) border-box;
+}
+/* 
+td{
+    width: 100px;
+} */
+
+.ab_input, .mb_input, .submit{
+    text-align: center;
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.submit{
+    transition: 0.6s;
+    margin-top: 30px;
+    width: 150px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    cursor: pointer
+}
+
+.submit:hover{
+    background: lightgreen;
+    border: 5px solid  rgb(3, 107, 12) ;
+}
+
+/* Rsidebar */
+
+.Rsidebar{
+    text-align: center;
+    position: absolute;
+    padding: 20px 30px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+}
+
+#logout{
+    margin-top: 20px;
+    padding: 20px;
+    width: 200px;
+}
+
+/* Time */
+
+.Timenow{
+    text-align: center;
+    padding: 20px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    width: 220px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.active{
+    font-weight: lighter;
+}
+
+/* Display Boooks */
+
+.bookDisplay, .stuDisplay{
+    position: absolute;
+    margin-top: 150px;
+    text-align: center;
+    margin-left: 100px;
+    padding: 20px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    width: max-content;
+    height: min-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.stuDisplay{
+    position: absolute;
+    margin-top: 90px;
+    text-align: center;
+    margin-left: 100px;
+    padding: 20px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    width: max-content;
+    height: min-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bookDisplay th, .stuDisplay th, .rentDisplay th, .rtndetails th, .userrentDisplay th, .rentDisplaymain th, .rentDisplayuser th{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid  rgb(3, 107, 12) ;
+}
+.bookDisplay td, .stuDisplay td, .rentDisplay td, .rtndetails td, .userrentDisplay td, .rentDisplaymain td, .rentDisplayuser td{
+    padding: 10px;
+    border-bottom: 2px solid  rgb(3, 107, 12) ;
+}
+
+#dbooks{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+.bookDisplay th:nth-child(7){
+   background-image: linear-gradient(to bottom, rgb(3, 107, 12), rgb(172, 218, 161));
+   text-align: center;
+   width: 100px;
+   border: 2px solid black;
+   cursor: pointer;
+}
+
+.stuDisplay th:nth-child(5){
+    background-image: linear-gradient(to bottom, rgb(3, 107, 12), rgb(172, 218, 161));
+    text-align: center;
+    width: 100px;
+    border: 2px solid black;
+    cursor: pointer;
+ }
+
+
+#tbody{
+    font-size:small;
+}
+
+#removebtn{
+    background-color: rgba(239, 4, 4, 0.811);
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#editbtn{
+    background-color:aliceblue;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mdbookpop{
+  position: absolute;
+  margin-top: -250px;
+  margin-left: -500px;
+  /* position: fixed; */
+
+  transform: translate(-50%, -50%);
+  padding: 20px;
+ 
+}
+
+.cfrmbtn{
+    padding: 5px;
+    margin-top: 20px;
+    margin-right: 25px;
+    border-radius: 5px;
+    width: 100px;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    max-height: 100%;
+    overflow:auto;
+    padding: 250px 450px ;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+  }
+  
+  .popup-content {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+  }
+
+  #close{
+    
+    position: absolute;
+    top: -80px;
+    right: -100px;
+    padding: 5px;
+    background-color: aliceblue;
+    border: 1px solid black;
+  }
+
+  .transaction-saved-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 0 50px rgba(3, 107, 12, 0.838);
+
+  }
+
+  .StuView td{
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid  rgb(3, 107, 12) ;
+        width: max-content;
+  }
+
+  .StuView th{
+    border: none;
+  }
+
+  .vwpopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    max-height: 50%;
+    overflow:auto;
+    padding: 50px 80px ;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+  }
+  
+  .vwpopup-content {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+  
+  .vwoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+  }
+  
+  .RentView{
+    width: 800px;
+    padding: 10px;
+    border: 3px solid black;
+  }
+  .RentView th{
+      border: none;
+      
+  }
+  .RentView td{
+      border: none;
+  }
+
+
+
+  .RentView input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid  rgb(3, 107, 12) ;
+  }
+
+  #rentdata{
+    position: relative;
+    left: 200px;
+    top: 50px;
+  }
+
+.rentDisplay{
+    position: absolute;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: -50px;
+    padding: 20px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    width: max-content;
+    height: min-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.rtndetails{
+    position: absolute;
+    margin-top: -50px;
+    text-align: center;
+    margin-left: 0px;
+    padding: 20px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    width: max-content;
+    height: min-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#registerUser{
+    position: absolute  ;
+    left: 150px;
+    top: 50px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    height: max-content;
+    width: max-content;
+    padding: 20px 50px;
+    z-index: 1;
+}
+
+.close{
+    float: right;
+    position: relative;
+    top: -80px;
+    color: blue;
+    cursor: pointer;
+}
+
+#userrentdata{
+    position: relative;
+    left: -200px;
+  }
+
+.userrentDisplay{
+    position: absolute;
+    text-align: center;
+    margin-left: 50px;
+    padding: 20px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    width: max-content;
+    height: min-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mainAdmin{
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    margin-left: 40px;
+    width: 900px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto, auto;
+    grid-template-rows: auto auto;
+}
+
+
+
+#bookStock{
+    position: absolute;
+    top: 74%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    overflow:auto;
+    padding: 260px 290px 0px 50px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    
+}
+
+#newRents{
+    position: absolute;
+    top: 74%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    max-height: 100%;
+    overflow:auto;
+    padding: 260px 390px 0px 50px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+}
+#home_main_logo_main{
+    position: absolute;
+    left: 100px;
+    width: 200px;
+}
+#mainWelcome{
+    position: absolute;
+    left: 350px;
+    font-size: 30px;
+}
+
+.mainUser{
+    position: absolute;
+    top: 100px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    margin-left: 40px;
+    width: 900px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto, auto;
+    grid-template-rows: auto auto;
+}
+
+#bookStockUser{
+    position: absolute;
+    top: 70%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    overflow:scroll;
+    padding: 260px 290px 0px 50px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    scrollbar-width: none;
+    
+}
+
+#newRentsUser{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    max-height: 100%;
+    overflow:auto;
+    padding: 260px 390px 0px 50px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+}
+
+.rentDisplaymain{
+    position: absolute;
+    margin-top: -280px;
+    text-align: center;
+    margin-left: -50px;
+    padding: 20px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    width: max-content;
+    height: min-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.rentDisplayuser{
+    position: absolute;
+    margin-top: -280px;
+    text-align: center;
+    margin-left: -46px;
+    padding: 20px;
+    border: 5px solid transparent;
+    background: linear-gradient(white,  white) padding-box,
+    linear-gradient(to top, rgb(3, 107, 12), rgb(3, 107, 12)) border-box;
+    border-radius: 20px;
+    width: max-content;
+    height: min-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      
+    }
+    .nav_main_sub_container_2 li{
+        margin-left: -425px;
+        /* display: none; */
+        flex-direction: row;
+    }
+    .nav_main_sub_container_1 li{
+        margin-left : -20px;
+        /* display: none; */
+        flex-direction: row;
+    }
+    #Rsidebar{
+        margin-top: 120px;
+        margin-left: -900px;
+        display: flex;
+        flex-direction: column;
+        bottom: 100px;
+    }
+    #Time{
+        display: none;
+    }
+    .Rsidebar{
+        display: flex;
+        flex-direction: row;
+        margin-left: -60px;
+        padding: 2px;
+        width: 400px;
+    }
+    #logout{
+        margin-right: 10px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+        border-radius: 5px;
+        padding: 0px;
+        width: 100px;
+
+    }
+    #rside_profile{
+         padding-top: 28px;
+         margin-top: 15px;
+         margin-bottom: 25px;
+    }
+
+    #bookStock, #bookStockUser{
+        display: none;
+    }
+
+    #newRents{
+        display: none;
+    }
+    .home_main_logo_main{
+        position: absolute;
+        width: 20px;
+    }
+    
+    .nav_main {
+      margin: 10px 0;
+    }
+    .bookDisplay th, .stuDisplay th, .rentDisplay th, .rtndetails th, .userrentDisplay th, .rentDisplaymain th, .rentDisplayuser th{
+        display: flex;
+        flex-direction: row;
+        padding: 2px;
+        border-radius: 10px;
+        border: 2px solid  rgb(3, 107, 12) ;
+    }
+    .bookDisplay td, .stuDisplay td, .rentDisplay td, .rtndetails td, .userrentDisplay td, .rentDisplaymain td, .rentDisplayuser td{
+        display: block;
+        flex-direction: row;
+        padding: 2px;
+        border-bottom: 2px solid  rgb(3, 107, 12) ;
+    }
+    
+    #dbooks{
+        margin-top: 120px;
+        margin-left: 180px;
+    }
+    .bookDisplay, .stuDisplay, .userrentDisplay{
+        margin-left: 25px;
+        margin-top: 200px;
+        width: 430px;
+    }
+
+    .rentDisplay{
+        margin-left: -20px;
+        margin-top: 80px;
+        width: 430px;
+    }
+    #rentdata{
+        margin-left: -80px;
+    }
+    .rentDisplay th:nth-child(1), .rentDisplay td:nth-child(1){
+    background-color: darkgreen;
+    }
+
+    .mainAdmin, .mainUser{
+        display: none;
+    }
+    #renttitle{
+        position: absolute;
+        margin-top: 100px;
+        margin-left: -120px;
+    }
+
+    .rentele{
+        margin-top: 180px;
+    }
+
+    #userrentdata{
+        position: relative;
+        margin-left: 320px;
+        margin-top: 250px;
+    }
+
+    .userrentDisplay{
+        position: absolute;
+        margin-top: 20px;
+    }
+    .RentView{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        padding: 0px;
+    }
+    .vwpopup {
+        overflow:auto;
+        padding: 20px 0px ;
+      }
+    
+  }

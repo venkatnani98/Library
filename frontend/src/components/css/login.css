@@ -1,0 +1,118 @@
+
+
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman';
+}
+#home_main_logo{
+    margin-left: 30px;
+    width: 80px;
+    }
+header{
+    padding: 5px;
+    background-image: linear-gradient(to bottom, rgb(3, 107, 12), rgb(172, 218, 161));
+}
+h4{
+    float: right;
+    margin: 35px 350px 0px 0px;
+}
+
+#home_login{
+     height: 280px;
+     width: 450px;
+     float: right; 
+     border-radius: 50px;
+     margin-right: 150px;
+     text-align: center;
+
+     background: linear-gradient(white,  white) padding-box,
+     linear-gradient(to bottom, rgb(3, 107, 12), rgb(172, 218, 161)) border-box;
+     border: 5px solid transparent;
+
+     
+ }
+#home_contact{
+    height: 260px;
+     width: 430px;
+     padding: 10px;
+     float: right; 
+     background: linear-gradient(white,  white) padding-box,
+     linear-gradient(to bottom, rgb(3, 107, 12), rgb(172, 218, 161)) border-box;
+     border: 5px solid transparent;
+     border-radius: 50px;
+     margin-right: 150px;
+     text-align: center;   
+}
+#home_note{ color: red; font-weight: bold;}
+h1{
+    text-align: center;
+}
+#home_login_admin_user{
+    padding: 2px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    font-family: Calibri;
+    font-weight: bold;
+}
+input{
+    margin: 5px;
+    padding: 5px;
+    width: 180px;
+}
+#home_input{
+    text-align: center;
+    position:relative;
+    margin-left: 20px;
+}
+#home_create_acc a{
+    cursor: pointer;
+text-decoration: none;
+}
+#home_create_acc{
+    position: relative;
+    text-align: center;
+    float: right;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+
+footer{
+    position:fixed;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    background-image: linear-gradient(to top, rgb(3, 107, 12), rgb(172, 218, 161));
+}
+footer a{ text-decoration: none; color: blue; }
+
+#home_create_acc a{
+    color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+    #home_main_logo{
+        position: inherit;
+        margin-left: 180px;
+    }
+    h4{
+        display: none;
+    }
+    #home_login{
+        position: absolute;
+        margin-left: 20px;
+        height: 280px;
+        width: 400px;
+    }
+    #home_contact{
+        position: absolute;
+        margin-top: 300px;
+        height: 280px;
+        width: 350px;
+        margin-left: 35px;
+    }
+}
